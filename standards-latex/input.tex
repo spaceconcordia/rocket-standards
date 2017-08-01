@@ -1,0 +1,305 @@
+\documentclass[]{article}
+
+
+%-----------------------------------------------------------------------------------------------------------------------------------------
+%
+%   GLOBALS
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------
+\newcommand{\DOCTITLE}{
+
+}
+\newcommand{\DOCAUTHOR}{
+
+}
+\newcommand{\DISCLAIMER}
+{
+    \topskip0pt
+    \vspace*{\fill}
+    {
+    \centering
+        \small{
+            THIS DOCUMENT IS INTENDED FOR CANADIAN TEAMS ONLY
+        }
+    }
+    \\
+    {
+    \centering
+        \small{
+        GO CANADA 
+        }
+    }
+    \vspace*{\fill}
+}
+
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+    \usepackage{xltxtra,xunicode}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+\usepackage[usenames,dvipsnames]{color}
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={},
+            pdftitle={Canadian Amateur Rocketry Standards},
+            colorlinks=true,
+            citecolor=blue,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\usepackage[normalem]{ulem}
+% avoid problems with \sout in headers with hyperref:
+\pdfstringdefDisableCommands{\renewcommand{\sout}{}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+
+\title{Canadian Amateur Rocketry Standards}
+\date{}
+
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%-----------------------------------------------------------------------------------------------------------------------------------------
+%
+%   PAGE SIZE AND MARGINS
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------
+\usepackage[a4paper,headheight=30pt]{geometry}
+%\usepackage[letterpaper, portrait, margin=2in]{geometry}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.75in}
+
+\usepackage{graphicx}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+
+%-----------------------------------------------------------------------------------------------------------------------------------------
+% Page break after sections
+%-----------------------------------------------------------------------------------------------------------------------------------------
+%\usepackage{titlesec}
+%\newcommand{\sectionbreak}{\clearpage}
+
+\lhead{
+    %left header content
+%    \topskip0pt
+%    \vspace*{\fill}
+    {
+    \centering
+        \includegraphics[height=2.66em]{images/mapleleaf.png}
+    }
+%    \vspace*{\fill}
+}
+\chead{
+    \topskip0pt
+    \vspace*{\fill}
+    {
+    \centering
+        \small{
+            THIS DOCUMENT IS INTENDED FOR CANADIAN TEAMS ONLY
+        }
+    }
+    \\
+    {
+    \centering
+        \small{
+        AMERICAN TEAMS SUCK 
+        }
+    }
+    \vspace*{\fill}
+}
+\rhead{
+%    \topskip0pt
+%    \vspace*{\fill}
+    % right header content
+    {
+    \centering
+        \includegraphics[height=3.0em]{images/mapleleaf.png}
+    }
+%    \vspace*{\fill}
+}
+\lfoot{
+    % left footer content
+    \topskip0pt
+    \vspace*{\fill}
+    Canada
+    Revision 0.0
+    \vspace*{\fill}
+}
+\cfoot{
+    % middle footer content
+    \topskip0pt
+    \vspace*{\fill}
+    {
+    \centering
+    Doc Template \\
+    \today
+    }
+    \vspace*{\fill}
+}
+\rfoot{
+    % right footer content
+    \topskip0pt
+    \vspace*{\fill}
+    \thepage
+    \vspace*{\fill}
+}
+% extend the header into the margins
+\usepackage{calc}
+\fancyheadoffset[L,R]{\marginparsep+\marginparwidth}
+
+%--------------------------------------------------------------------------------------------------------------
+%	My Packages
+%--------------------------------------------------------------------------------------------------------------
+\usepackage{capt-of}
+%--------------------------------------------------------------------------------------------------------------
+%	
+%	COPY FRONTMATTER AND MAINMATTER AND BACKMATTER COMMANDS
+%	
+%--------------------------------------------------------------------------------------------------------------
+\makeatletter
+
+\newcommand\frontmatter{%
+    \cleardoublepage
+  %\@mainmatterfalse
+  \pagenumbering{roman}}
+
+\newcommand\mainmatter{%
+    \cleardoublepage
+ % \@mainmattertrue
+  \pagenumbering{arabic}}
+
+\newcommand\backmatter{%
+  \if@openright
+    \cleardoublepage
+  \else
+    \clearpage
+  \fi
+ % \@mainmatterfalse
+   }
+
+\makeatother
+
+%--------------------------------------------------------------------------------------------------------------
+%
+%	BEGIN DOCUMENT
+%
+%--------------------------------------------------------------------------------------------------------------
+\begin{document}
+
+%--------------------------------------------------------------------------------------------------------------
+%
+%	TITLEPAGE
+%
+%--------------------------------------------------------------------------------------------------------------
+
+%\maketitle
+\input{./sections/titlepage.tex}
+
+%--------------------------------------------------------------------------------------------------------------
+%
+%	FRONT MATTER
+%
+%--------------------------------------------------------------------------------------------------------------
+\frontmatter
+\input{./sections/abstract.tex}
+\clearpage
+
+{
+\hypersetup{linkcolor=black}
+\setcounter{tocdepth}{3}
+\tableofcontents
+\clearpage
+}
+
+\listoftables
+\listoffigures
+\clearpage
+
+
+%--------------------------------------------------------------------------------------------------------------
+%
+%	MAIN MATTER
+%
+%--------------------------------------------------------------------------------------------------------------
+\mainmatter
+
+%--------------------------------------------------------------------------------------------------------------
+% body
+%--------------------------------------------------------------------------------------------------------------
+\subsection{List of Abbreviations}\label{list-of-abbreviations}
+\input{./Sections/listofabbreviations.tex}
+\clearpage
+
+\section{Section 1}\label{section-1}
+	\input{./Sections/section1.tex}
+	\clearpage
+
+\section{Section 2}\label{section-2}
+	\input{./Sections/section3.tex}
+	\clearpage
+	
+\section{Section 3}\label{section-3}
+	\input{./Sections/section3.tex}
+	\clearpage
+
+%--------------------------------------------------------------------------------------------------------------
+%
+%	BACK MATTER
+%
+%--------------------------------------------------------------------------------------------------------------
+%\backmatter
+
+%--------------------------------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------------------------------
+\mainmatter
+\end{document}
