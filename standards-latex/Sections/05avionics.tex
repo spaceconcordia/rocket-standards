@@ -1,0 +1,14 @@
+\subsection{General Safety Guidelines for Recovery Deploying Flight Electronics}
+\begin{itemize}
+\item Please have redundant electronics. You should have 2 completely separate circuits. Redundant altimeters, pyro-cutters, wiring, power sources, everything. If you don't have dual redundancy, you're begging Murphy’s law to ruin your day.
+\item Use a commercial altimeter
+\end{itemize}
+
+\subsection{General Safety Guidelines for designing a launch control ground station}
+\begin{itemize}
+\item Your ground station should probably have a key switch (or some other way of disabling it while personnel are at the launch pad), and the key should be with launch pad personnel while they are at the pad.
+\item If your client-side (or control side, human side, base camp side, whatever) ground station loses contact with your tower-side (or rocket side, or whatever), the tower-side ground station should be programmed to keep itself in the safest possible state (don't turn on ignition, stop filling the rocket with fuel, etc).
+\item Your ground station needs to work from outside the Minimum Safe Distance set by ESRA. In 2017, this was 2000 feet, but launch control was located 3000' away. So aim for 3000. And give yourself some breathing room. About a mile should be fine.
+\item If you're implementing your own communications protocol (probably overkill, but some projects do), then you need checksums and acknowledgments baked into that protocol. It should not be conceptually possible for your tower side station to do anything that the client side station did not ask it to do. It should also be impossible to hit any kind of deadlock or out of phase-ness.
+\item If you're writing code (for ground station specifically, but this really goes for any safety critical software), write it in pseudo-code first, then get it reviewed by at least 2 people who know what they're doing, then write it, then unit test it to the best of your ability. This code is responsible for keeping people alive. Having it in pseudo-code makes it easier to understand for new people, and makes it easier to debug in case of strange behaviour.
+\end{itemize}

@@ -1,0 +1,18 @@
+\subsection{General Safety Guidelines}
+\begin{itemize}
+\item If you have any pressure vessels in your rocket (combustion chamber, oxidizer or fuel tank, whatever), hydrostatic test it to a decent factor of safety.
+\item In this instance, please don't let "decent" be anything less than 1.5. Even that's probably pushing it.
+\item Inspect EVERYTHING once you get to SAC. It’s possible that some gear, including flight components were damaged during their travels from Canada to competition. Don’t fly damaged hardware, as your successful hydrostatic tests no longer apply.
+\item Writing an inspection checklist will greatly streamline the process of checking all flight hardware, so doing so is highly recommended.
+\end{itemize}
+
+\subsection{Structural Vibrations}
+\subsubsection{Analyzing Fins for aeroelastic loads}
+
+NACA TN-4197 presents a simplified criterion for determining the air speed at which rocket fins will experience destructive fin flutter with the following equation:
+\begin{equation}
+V_f = a\sqrt{\frac{G_E}{\frac{39.3A^3}{(\frac{t}{c})^3(A+2)}(\frac{\lambda+1}{2})(\frac{P}{P_0})}}
+\end{equation}
+
+Where $V_f$ is the flutter speed, $a$ is the speed of sound, $G_E$ is the shear modulus, $A$ is the aspect ration, $\lambda$ is the taper ratio, $P$ is the pressure at the vehicle’s current altitude, $P_0$ is the standard pressure at sea level (considered to be 1 bar), $t$ is the thickness of the fin and $c$ is the root chord of the fin.
+	The units presented by NACA to be used in these calculations are imperial. However, in a few cases, units of one’s choice may be used, such as with the ratio of sea-level pressure to current pressure, the ratio of thickness to root chord, or for the velocities. In these cases, as long as both terms in the ratio have the same unit, the final result will be correct (i.e., if the speed of sound is in meters per second, the final result will be in meters per second). The critical exception is that the shear modulus must be in pounds per square inch.
