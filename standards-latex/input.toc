@@ -1,0 +1,21 @@
+\contentsline {subsection}{List of Abbreviations}{1}{section*.4}
+\contentsline {section}{Section 0 - Roles and Responsibilities}{2}{section*.5}
+\contentsline {subsection}{Section 1}{2}{section*.6}
+\contentsline {section}{Section 1 - Equipment and Facilities}{3}{section*.7}
+\contentsline {subsection}{Section 1}{3}{section*.8}
+\contentsline {section}{Section 2 - Vehicle Characteristics}{4}{section*.9}
+\contentsline {subsection}{Section 1}{4}{section*.10}
+\contentsline {section}{Section 3 - Flight Profile}{5}{section*.11}
+\contentsline {subsection}{Section 1}{5}{section*.12}
+\contentsline {section}{Section 4 - Flight Schedule}{6}{section*.13}
+\contentsline {subsection}{Section 1}{6}{section*.14}
+\contentsline {section}{Section 5 - Avionics and Groundstations}{7}{section*.15}
+\contentsline {subsection}{Section 1}{7}{section*.16}
+\contentsline {section}{Section 6 - Propulsion}{8}{section*.17}
+\contentsline {subsection}{Section 1}{8}{section*.18}
+\contentsline {section}{Section 7 - Competition and Field Operations}{9}{section*.19}
+\contentsline {subsection}{Section 1}{9}{section*.20}
+\contentsline {section}{Section 8 - General Testing and Documentation Guidelines}{10}{section*.21}
+\contentsline {subsection}{Section 1}{10}{section*.22}
+\contentsline {section}{Section 9 - Policy of the Standards}{11}{section*.23}
+\contentsline {subsection}{Section 1}{11}{section*.24}
